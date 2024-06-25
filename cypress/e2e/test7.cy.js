@@ -13,5 +13,13 @@ cy.get('.react-calendar__navigation__label').click();
 cy.contains("button",year).click()
 cy.get('button[class*="react-calendar__year-view__months__month"] abbr').eq(Number(month)-1).click()
 cy.contains('abbr',date).click()
+
+//Assertion
+cy.get('[name="date"]').then((ele)=>{
+    
+const date = ele.prop('value')
+expect(date).to.equal('2023-04-10')
+})
     })
+
 })
