@@ -4,7 +4,7 @@
 import 'cypress-iframe';
 
 
-describe('Frames Test', () => {
+describe('Frames', () => {
     it('Testing frames', () => {
       
         cy.visit("https://rahulshettyacademy.com/AutomationPractice/");

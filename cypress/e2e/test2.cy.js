@@ -1,10 +1,9 @@
 /// <reference types="cypress" />
-describe('Automation Testing',()=>{
-    it("Test",()=>{
+describe('Alerts',()=>{
+    it("Handling alerts",()=>{
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
         //Handling Alerts
-
         cy.get('#alertbtn').click();
         cy.get('#confirmbtn').click();
         cy.on('window:alert',(str) => {
