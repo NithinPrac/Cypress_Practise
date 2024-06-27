@@ -8,11 +8,20 @@
 // commands please read more here:
 // https://on.cypress.io/custom-commands
 // ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
+
+  
+ /// <reference types="cypress" />
+
+/*
+Cypress.Commands.add('selectProduct', (productname: string) => {
+  cy.get('.card-title a').each(($el, index, $list) => {
+    if ($el.text() === productname) {
+      cy.get('.btn.btn-info').eq(index).click();
+    }
+  });
+});
+*/
+  
 //
 // -- This is a child command --
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
